@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API・ブロック 検索＆自動翻訳ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>API・ブロック 検索＆自動翻訳ツール</h1>
+    
+    <!-- 自動読み込みステータスエリア -->
+    <div class="file-input-area" style="border-style: solid;">
+        <div id="statusText" class="status-text">データを読み込み中...</div>
+    </div>
+
+    <!-- 検索キーワード入力 -->
+    <input type="text" id="searchBox" class="search-box" placeholder="関数名、説明、パラメータ名で検索..." disabled>
+
+    <!-- 結果一覧を表示するエリア -->
+    <div id="listContainer" class="list-container"></div>
+</div>
+
+<!-- コピー通知ポップアップ -->
+<div id="toast" class="toast">コピーしました</div>
+
+<script src="script.js"></script>
+</body>
+</html>
